@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <a href="file:///C:/Users/devan/OneDrive/Desktop/VS/address.html">Address Details</a>
+    <br>
+    <a href="file:///C:/Users/devan/OneDrive/Desktop/VS/address.html">Health Details</a>
+    <div class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaksCUEevyrvwCXVxK9T7hb-r9Nz6xyVWeEg&s">
+    <h2>Imperial College</h2>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center">Student Details</h2>
+        <form id="registrationForm" class="mt-4">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="course">Course</label>
+                    <select id="course" class="form-control" required>
+                        <option selected disabled>Select a course</option>
+                        <option>Computer Science</option>
+                        <option>Information Technology</option>
+                        <option>Electronics Engineering</option>
+                        <option>Electrical Engineering</option>
+                        <option>Chemical Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>AeroSpace Engineering</option>
+                        <option>Food Technology</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Date">Date Of Birth</label>
+                    <input type="text" class="form-control" id="dob" placeholder="DD/MM/YYYY" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="aadhar">Aadhar No.</label>
+                    <input type="text" class="form-control" id="Aadharnum" placeholder="Enter your Aadhar No." required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="gender">Gender</label>
+                    <select id="gender" class="form-control" required>
+                        <option selected disabled>Select your gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="category">Category</label>
+                    <select id="category" class="form-control" required>
+                        <option selected disabled>Select</option>
+                        <option>Gen</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                        <option>GEN-EWS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for=" Fathername">Father's Name</label>
+                    <input type="text" class="form-control" id="Father" placeholder="Enter here" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="Mothername">Mother's Name</label>
+                    <input type="text" class="form-control" id="Mother" placeholder="Enter here" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="Hostel">Hostel Facility</label>
+                    <input type="radio" value="Yes" name="hostel">Yes
+                    <input type="radio" value="No" name="hostel">No
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="12th">Upload Class 12th Marksheet</label>
+                    <input type="file" name="file">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="10th">Upload Class 10th Marksheet</label>
+                    <input type="file" name="file">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="message" class="mt-3"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
